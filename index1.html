@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description"
+        content="Explore my developer portfolio featuring coding projects and technical skills with a sleek hacker-inspired design and interactive elements.">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="">
+
+    <!-- Alpine.js - Load first -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Rubik", sans-serif !important;
+        }
+
+        body,
+        div,
+        p {
+            font-family: "Roboto", sans-serif !important;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>Developer Portfolio | Hacker-Inspired Coding Projects</title>
+    <!-- SEO Description -->
+    <meta name="description"
+        content="Explore my developer portfolio featuring coding projects and technical skills with a sleek hacker-inspired design and interactive elements.">
+
+    <!-- Performance optimization: Preload critical resources -->
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+
+    <!-- Header Scripts -->
+    <script id="header-scripts">
+        // This script tag will be replaced with actual scripts.head content
+        if (window.scripts && window.scripts.head) {
+            document.getElementById('header-scripts').outerHTML = window.scripts.head;
+        }
+    </script>
+
+    <!-- Core CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // render the settings object
+        //console.log('settings', [object Object]);
+        document.addEventListener('DOMContentLoaded', function () {
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: {
+                                DEFAULT: '#0a0a0a',
+                                50: '#f8f8f8',
+                                100: '#e8e8e8',
+                                200: '#d3d3d3',
+                                300: '#a3a3a3',
+                                400: '#737373',
+                                500: '#525252',
+                                600: '#404040',
+                                700: '#262626',
+                                800: '#171717',
+                                900: '#0a0a0a',
+                                950: '#030303',
+                            },
+                            secondary: {
+                                DEFAULT: '#e6ffe6',
+                                50: '#f8f8f8',
+                                100: '#e8e8e8',
+                                200: '#d3d3d3',
+                                300: '#a3a3a3',
+                                400: '#737373',
+                                500: '#525252',
+                                600: '#404040',
+                                700: '#262626',
+                                800: '#171717',
+                                900: '#0a0a0a',
+                                950: '#030303',
+                            },
+                            accent: {
+                                DEFAULT: '',
+                                50: '#f8f8f8',
+                                100: '#e8e8e8',
+                                200: '#d3d3d3',
+                                300: '#a3a3a3',
+                                400: '#737373',
+                                500: '#525252',
+                                600: '#404040',
+                                700: '#262626',
+                                800: '#171717',
+                                900: '#0a0a0a',
+                                950: '#030303',
+                            },
+                        },
+                        fontFamily: {
+                            sans: ['Rubik', 'Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                            heading: ['Roboto', 'Inter', 'system-ui', 'sans-serif'],
+                            body: ['Roboto', 'Inter', 'system-ui', 'sans-serif'],
+                        },
+                        spacing: {
+                            '18': '4.5rem',
+                            '22': '5.5rem',
+                            '30': '7.5rem',
+                        },
+                        maxWidth: {
+                            '8xl': '88rem',
+                            '9xl': '96rem',
+                        },
+                        aspectRatio: {
+                            'portrait': '3/4',
+                            'landscape': '4/3',
+                            'ultrawide': '21/9',
+                        },
+                    },
+                },
+                variants: {
+                    extend: {
+                        opacity: ['disabled'],
+                        cursor: ['disabled'],
+                        backgroundColor: ['active', 'disabled'],
+                        textColor: ['active', 'disabled'],
+                    },
+                },
+            }
+        });
+    </script>
+
+    <!-- Utilities and Components -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+
+    <!-- Optimized Font Loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Dynamic Meta Tags -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="">
+    <meta name="google-site-verification" content="">
+    <meta name="baidu-verification" content="">
+    <meta name="yandex-verification" content="">
+    <meta name="bing-verification" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Hacker Portfolio">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+
+
+    <!-- Font Links -->
+
+    <link rel="icon" type="image/x-icon" href="">
+
+    <!-- FAQ Accordion Styles -->
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: Rubik, Inter, system-ui, sans-serif;
+        }
+
+        body {
+            font-family: Roboto, Inter, system-ui, sans-serif;
+        }
+
+        /* FAQ Accordion Styling */
+        .faq-item {
+            margin-bottom: 0.75rem;
+        }
+
+        .faq-item button {
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+        }
+
+        .faq-item button:focus {
+            outline: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .faq-item button[aria-expanded="true"] {
+            border-radius: 0.75rem 0.75rem 0 0;
+        }
+
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .faq-content.active {
+            max-height: 1000px;
+        }
+
+        .faq-toggle-icon {
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        [aria-expanded="true"] .faq-toggle-icon {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<body class="antialiased text-gray-800 min-h-screen flex flex-col">
+                    <section id="about" class="py-16 bg-neutral-900 text-[#e6ffe6] font-['Courier_New',_monospace]">
+                        <div class="container mx-auto px-4">
+                            <h2 class="text-2xl md:text-4xl mb-12 font-bold text-[#00ff00]">About</h2>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <!-- Profile Image -->
+                                <div class="flex justify-center items-center">
+                                    <div
+                                        class="relative w-64 h-64 rounded-full border-2 border-[#00ff00] overflow-hidden transition-all duration-300 hover:scale-105 hover:border-4">
+                                        <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                                            alt="Developer Profile" class="w-full h-full object-cover" />
+                                        <div
+                                            class="absolute inset-0 bg-neutral-900 bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                            <span class="text-[#00ff00] text-lg">Cybersecurity Expert</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Bio Information -->
+                                <div class="flex flex-col justify-center">
+                                    <h3 class="text-xl md:text-2xl mb-6 text-[#00ff00]">Cybersecurity Specialist</h3>
+
+                                    <p class="text-base md:text-lg mb-6">
+                                        With over 5 years of experience in penetration testing and network security, I
+                                        specialize in identifying and mitigating vulnerabilities in critical systems.
+                                    </p>
+
+                                    <p class="text-base md:text-lg mb-8">
+                                        My approach combines ethical hacking techniques with robust defensive strategies
+                                        to ensure comprehensive protection against evolving threats.
+                                    </p>
+
+                                    <div class="flex flex-wrap gap-4">
+                                        <span
+                                            class="px-4 py-2 bg-neutral-800 rounded-full border border-[#00ff00] inline-flex items-center text-sm hover:bg-neutral-700 transition-colors duration-300">
+                                            <svg class="w-4 h-4 mr-2 fill-current text-[#00ff00]"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                            </svg>
+                                            GitHub
+                                        </span>
+                                        <span
+                                            class="px-4 py-2 bg-neutral-800 rounded-full border border-[#00ff00] inline-flex items-center text-sm hover:bg-neutral-700 transition-colors duration-300">
+                                            <svg class="w-4 h-4 mr-2 fill-current text-[#00ff00]"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                                            </svg>
+                                            LinkedIn
+                                        </span>
+                                        <span
+                                            class="px-4 py-2 bg-neutral-800 rounded-full border border-[#00ff00] inline-flex items-center text-sm hover:bg-neutral-700 transition-colors duration-300">
+                                            <svg class="w-4 h-4 mr-2 fill-current text-[#00ff00]"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                            </svg>
+                                            Twitter
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Skills Section -->
+                            <div class="mt-16">
+                                <h3 class="text-xl md:text-2xl mb-8 text-[#00ff00]">Technical Skills</h3>
+
+                                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+                                    <!-- Skill 1 -->
+                                    <div class="flex flex-col items-center">
+                                        <div
+                                            class="w-[50px] h-[50px] rounded-full bg-white p-2 border border-neutral-500 hover:border-[#00ff00] hover:scale-110 transition-all duration-300">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                class="w-full h-full">
+                                                <path
+                                                    d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-.47 4.013h1.472v8.357l5.246 5.246-1.042 1.041-5.676-5.676V4.013z"
+                                                    fill="#000" />
+                                            </svg>
+                                        </div>
+                                        <span class="mt-2 text-sm">Penetration Testing</span>
+                                    </div>
+
+                                    <!-- Skill 2 -->
+                                    <div class="flex flex-col items-center">
+                                        <div
+                                            class="w-[50px] h-[50px] rounded-full bg-white p-2 border border-neutral-500 hover:border-[#00ff00] hover:scale-110 transition-all duration-300">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                class="w-full h-full">
+                                                <path
+                                                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.177 19.691l-6.514-6.514 2.339-2.339 4.175 4.175 8.258-8.258 2.338 2.338-10.596 10.598z"
+                                                    fill="#000" />
+                                            </svg>
+                                        </div>
+                                        <span class="mt-2 text-sm">Network Security</span>
+                                    </div>
+
+                                    <!-- Skill 3 -->
+                                    <div class="flex flex-col items-center">
+                                        <div
+                                            class="w-[50px] h-[50px] rounded-full bg-white p-2 border border-neutral-500 hover:border-[#00ff00] hover:scale-110 transition-all duration-300">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                class="w-full h-full">
+                                                <path
+                                                    d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z"
+                                                    fill="#000" />
+                                            </svg>
+                                        </div>
+                                        <span class="mt-2 text-sm">Python</span>
+                                    </div>
+
+                                    <!-- Skill 4 -->
+                                    <div class="flex flex-col items-center">
+                                        <div
+                                            class="w-[50px] h-[50px] rounded-full bg-white p-2 border border-neutral-500 hover:border-[#00ff00] hover:scale-110 transition-all duration-300">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                class="w-full h-full">
+                                                <path
+                                                    d="M14.016 11.016v-3h-4.031v3h4.031zm0 4.969v-3h-4.031v3h4.031zm-10.032-4.969v-3h-3.984v3h3.984zm0 4.969v-3h-3.984v3h3.984zm15.047-9.984l-0.984 0.984h-18v14.016h18.984v-14.016l0.984-0.984h-0.984z"
+                                                    fill="#000" />
+                                            </svg>
+                                        </div>
+                                        <span class="mt-2 text-sm">Malware Analysis</span>
+                                    </div>
+
+                                    <!-- Skill 5 -->
+                                    <div class="flex flex-col items-center">
+                                        <div
+                                            class="w-[50px] h-[50px] rounded-full bg-white p-2 border border-neutral-500 hover:border-[#00ff00] hover:scale-110 transition-all duration-300">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                class="w-full h-full">
+                                                <path
+                                                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.218 19l-1.782-1.75 5.25-5.25-5.25-5.25 1.782-1.75 7 7-7 7z"
+                                                    fill="#000" />
+                                            </svg>
+                                        </div>
+                                        <span class="mt-2 text-sm">Incident Response</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+    <!-- FAQ Accordion JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            try {
+                // Utility function to safely access properties of potentially undefined objects
+                function safeAccess(obj, prop) {
+                    return obj && typeof obj === 'object' && prop in obj ? obj[prop] : undefined;
+                }
+
+                // Utility function to check if an element exists and is of a certain type
+                function isValidElement(el, type) {
+                    try {
+                        return el && el.nodeType === 1 && (!type || el.nodeName.toLowerCase() === type.toLowerCase());
+                    } catch (error) {
+                        console.error('Error checking element type:', error);
+                        return false;
+                    }
+                }
+
+                // Initialize all FAQ accordions on the page
+                initializeFAQs();
+            } catch (error) {
+                console.error('Failed to initialize FAQs:', error);
+            }
+
+            // Helper function to initialize FAQs
+            function initializeFAQs() {
+                try {
+                    // Look for FAQ sections with various possible class names/structures
+                    const faqButtons = document.querySelectorAll('.faq-item button, .accordion-item button, .accordion-header button, [data-accordion-toggle], .accordion button');
+
+                    if (faqButtons && faqButtons.length > 0) {
+                        faqButtons.forEach(button => {
+                            if (button) {
+                                try {
+                                    setupAccordionButton(button);
+                                } catch (err) {
+                                    console.error('Error setting up accordion button:', err);
+                                }
+                            }
+                        });
+                    } else {
+                        // Look for elements that might be FAQs even if they don't have the expected structure
+                        const possibleFaqElements = document.querySelectorAll('.faq, .faqs, .accordion, .accordions, .faq-section, #faq, #faqs');
+
+                        if (possibleFaqElements && possibleFaqElements.length > 0) {
+                            possibleFaqElements.forEach(element => {
+                                if (!element) return;
+
+                                try {
+                                    const questions = element.querySelectorAll('button, [role="button"], .accordion-item, .faq-item, h3');
+
+                                    if (questions && questions.length > 0) {
+                                        questions.forEach(question => {
+                                            if (!question) return;
+
+                                            try {
+                                                if (!question.hasAttribute('aria-expanded')) {
+                                                    // Turn this into a proper accordion button
+                                                    question.setAttribute('aria-expanded', 'false');
+                                                    const content = question.nextElementSibling;
+
+                                                    if (content) {
+                                                        const id = 'accordion-content-' + Math.random().toString(36).substr(2, 9);
+                                                        content.id = id;
+                                                        question.setAttribute('aria-controls', id);
+                                                        content.classList.add('faq-content');
+
+                                                        // Add rotation icon if not present
+                                                        if (!question.querySelector('.faq-toggle-icon')) {
+                                                            // Find any SVG or icon element that might already be there
+                                                            const existingIcon = question.querySelector('svg, i, .icon, img[class*="icon"]');
+
+                                                            if (existingIcon) {
+                                                                existingIcon.classList.add('faq-toggle-icon');
+                                                            } else {
+                                                                // Create and append a plus icon if none exists
+                                                                const icon = document.createElement('span');
+                                                                icon.innerHTML = '+';
+                                                                icon.classList.add('faq-toggle-icon', 'ml-auto', 'text-xl', 'font-medium');
+
+                                                                // Find where to append the icon (usually at the end of the button)
+                                                                const container = question.querySelector('div');
+
+                                                                if (container) {
+                                                                    container.style.display = 'flex';
+                                                                    container.style.justifyContent = 'space-between';
+                                                                    container.style.alignItems = 'center';
+                                                                    container.appendChild(icon);
+                                                                } else if (question) {
+                                                                    question.style.display = 'flex';
+                                                                    question.style.justifyContent = 'space-between';
+                                                                    question.style.alignItems = 'center';
+                                                                    question.appendChild(icon);
+                                                                }
+                                                            }
+                                                        }
+
+                                                        setupAccordionButton(question);
+                                                    }
+                                                }
+                                            } catch (err) {
+                                                console.error('Error processing question element:', err);
+                                            }
+                                        });
+                                    }
+                                } catch (err) {
+                                    console.error('Error processing FAQ section:', err);
+                                }
+                            });
+                        }
+                    }
+
+                    // Additional fallback for specific FAQ structures found on the site
+                    try {
+                        // Find the FAQ section by its heading
+                        const faqHeading = Array.from(document.querySelectorAll('h2, h3')).find(h =>
+                            h.textContent && h.textContent.toLowerCase().includes('frequently asked questions')
+                        );
+
+                        if (faqHeading) {
+                            const faqSection = faqHeading.closest('section') || faqHeading.parentElement;
+                            if (faqSection) {
+                                const questionElements = faqSection.querySelectorAll('h3:not(:first-child), .faq-question, .question, .accordion-title');
+
+                                questionElements.forEach(question => {
+                                    try {
+                                        if (!question.hasAttribute('aria-expanded') && question.nextElementSibling) {
+                                            question.classList.add('faq-question');
+                                            question.setAttribute('role', 'button');
+                                            question.setAttribute('aria-expanded', 'false');
+
+                                            const content = question.nextElementSibling;
+                                            const id = 'faq-content-' + Math.random().toString(36).substr(2, 9);
+                                            content.id = id;
+                                            question.setAttribute('aria-controls', id);
+                                            content.classList.add('faq-content');
+
+                                            setupAccordionButton(question);
+                                        }
+                                    } catch (error) {
+                                        console.error('Error processing FAQ question element:', error);
+                                    }
+                                });
+                            }
+                        }
+                    } catch (error) {
+                        console.error('Error in FAQ fallback processing:', error);
+                    }
+                } catch (error) {
+                    console.error('Error in initializeFAQs:', error);
+                }
+            }
+
+            function setupAccordionButton(button) {
+                if (!button) return;
+
+                try {
+                    if (!button.hasAttribute('data-accordion-initialized')) {
+                        button.setAttribute('data-accordion-initialized', 'true');
+
+                        button.addEventListener('click', function (event) {
+                            try {
+                                // Prevent event bubbling if needed
+                                event.stopPropagation();
+
+                                const isExpanded = button.getAttribute('aria-expanded') === 'true';
+                                const contentId = button.getAttribute('aria-controls');
+                                const content = contentId && document.getElementById(contentId) ?
+                                    document.getElementById(contentId) :
+                                    button.nextElementSibling;
+
+                                if (content) {
+                                    if (isExpanded) {
+                                        button.setAttribute('aria-expanded', 'false');
+                                        content.classList.remove('active');
+                                    } else {
+                                        button.setAttribute('aria-expanded', 'true');
+                                        content.classList.add('active');
+                                    }
+                                }
+                            } catch (err) {
+                                console.error('Error in accordion click handler:', err);
+                            }
+                        });
+                    }
+                } catch (error) {
+                    console.error('Error in setupAccordionButton:', error);
+                }
+            }
+        });
+    </script>
+
+    <!-- {bodyScripts} -->
+</body>
+
+</html>
