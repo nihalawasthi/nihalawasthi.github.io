@@ -15,6 +15,20 @@
         font-family: Inter, Inter, system-ui, sans-serif;
     }
 
+    /* Ensure loader is visible even before Tailwind finishes loading */
+    #Loader {
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ffffff;
+        backdrop-filter: blur(12px);
+        z-index: 1000;
+    }
+
     body::-webkit-scrollbar {
         background-color: transparent;
         width: 0.4vw;
@@ -135,4 +149,29 @@
         100% {
             color: transparent;
         }
+    }
+
+    .iframe-placeholder {
+        text-align: center;
+        padding: 1.5rem;
+        background: linear-gradient(135deg, rgba(0, 255, 157, 0.08), rgba(0, 255, 136, 0.02));
+        border: 1px dashed #00ff9d33;
+        border-radius: 0.75rem;
+    }
+
+    #zynqosPreviewContainer.is-loading {
+        position: relative;
+    }
+
+    #zynqosPreviewContainer.is-loading::after {
+        content: "Loading…";
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.35);
+        color: #e6ffe6;
+        font-weight: 600;
+        font-family: Inter, Inter, system-ui, sans-serif;
     }
