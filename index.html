@@ -321,7 +321,7 @@
                     <div class="w-full md:w-1/2 flex justify-center">
                         <div class="relative w-64 h-64 md:w-[30rem] md:h-[30rem] perspective-1000 rotate-y-0 hover:rotate-y-20 transition-transform duration-500 cursor-pointer"
                             id="avatar-container">
-                            <img src="/me.jpeg" alt="3D avatar of Nihal Awasthi"
+                            <img src="/me.jpeg" alt="Nihal Awasthi - Cybersecurity Expert and Full Stack Developer"
                                 class="rounded-full shadow-2xl border-4 border-[#00ff9d] w-full h-full object-cover"
                                 onerror="this.onerror=null; this.src='https://placehold.co/' + this.width + 'x' + this.height"
                                 width="400" height="400">
@@ -1237,7 +1237,8 @@
                                             <div class="iframe-placeholder">
                                                 <p class="text-sm text-neutral-300 mb-3">Load the live ZynqOS demo on demand.</p>
                                                 <button id="loadZynqosBtn"
-                                                    class="px-4 py-2 bg-[#00ff9d] text-neutral-900 font-semibold rounded hover:bg-[#00e68c] transition-colors duration-200 shadow">
+                                                    class="px-4 py-2 bg-[#00ff9d] text-neutral-900 font-semibold rounded hover:bg-[#00e68c] transition-colors duration-200 shadow"
+                                                    aria-label="Load ZynqOS live preview">
                                                     Load live preview
                                                 </button>
                                             </div>
@@ -1796,8 +1797,8 @@
                 });
 
                 // Add CSS animation
-                const style = document.createElement('style');
-                style.textContent = `
+                const projectStyle = document.createElement('style');
+                projectStyle.textContent = `
                 @keyframes fadeIn {
                 0% { opacity: 0; transform: translateY(20px); }
                 100% { opacity: 1; transform: translateY(0); }
@@ -1806,7 +1807,7 @@
                 animation: fadeIn 0.6s ease-out forwards;
                 }
                 `;
-                document.head.appendChild(style);
+                document.head.appendChild(projectStyle);
             </script>
 
 
@@ -2376,7 +2377,7 @@
                                 <!-- Left: Image/Icon -->
                                 <div class="md:w-1/3 flex items-center justify-center">
                                     <div class="w-40 h-40 flex items-center justify-center">
-                                        <img src="/Phablet.jpg" class="h-40 w-40">
+                                        <img src="/Phablet.jpg" alt="Phablet project screenshot" class="h-40 w-40">
                                     </div>
                                 </div>
 
@@ -2528,7 +2529,7 @@
                             <!-- Left: Image/Icon -->
                             <div class="md:w-1/3 flex items-center justify-center">
                                 <div class="w-40 h-40 flex items-center justify-center">
-                                    <img src="/Phablet.jpg" class="h-40 w-40">
+                                    <img src="/Phablet.jpg" alt="Phablet project screenshot" class="h-40 w-40">
                                 </div>
                             </div>
 
@@ -2664,8 +2665,8 @@
                 }
 
                 // Add CSS animation
-                const style = document.createElement('style');
-                style.textContent = `
+                const pubStyle = document.createElement('style');
+                pubStyle.textContent = `
 @keyframes fadeIn {
 0% { opacity: 0; transform: translateY(20px); }
 100% { opacity: 1; transform: translateY(0); }
@@ -2674,7 +2675,7 @@
 animation: fadeIn 0.8s ease-out forwards;
 }
 `;
-                document.head.appendChild(style);
+                document.head.appendChild(pubStyle);
 
             </script>
 
